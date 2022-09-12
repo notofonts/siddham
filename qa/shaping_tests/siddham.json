@@ -1,6 +1,15 @@
 {
     "tests": [
         {
+            "input": "𑖨𑖿𑖧 𑖨𑖿𑖎𑖎",
+            "expectation": "uni115A8.ini=0@97,0+642|uni11595115BF.ra=0@-642,0+0|space=3+200|uni115A8.ini.001=4@97,0+740|uni11580115BF.ra=4@-740,187+0|uni1158E=7+739",
+            "only": "NotoSansSiddham-Regular.ttf",
+            "features": {
+                "ss06": true
+            },
+            "note": "#1"
+        },
+        {
             "input": "𑖨𑖿𑖧 𑖨𑖿𑖎",
             "expectation": "uni115A8.ini=0+648|uni11595115BF.ra.001=0@-615,-201+0|space=3+200|uni115A8.ini=4@97,0+740|uni11580115BF.ra=4@-740,11+0",
             "only": "NotoSansSiddham-Regular.ttf",
