@@ -19,6 +19,11 @@
             "note": "#13"
         },
         {
+            "input": "𑖿𑖤𑖿𑖤",
+            "expectation": "uni25CC=0+594|uni11592115BF.med=0@-627,-680+0|uni11592115BF.third=0@-627,-1044+0",
+            "note": "Order of mark-to-mark and non-Siddham mark-to-base"
+        },
+        {
             "input": "𑖨𑖿𑖧 𑖨𑖿𑖎𑖎",
             "expectation": "uni115A8.ini=0@97,0+642|uni11595115BF.ra=0@-642,0+0|space=3+200|uni115A8.ini.high=4@97,0+740|uni11580115BF.ra=4@-740,187+0|uni1158E=7+739",
             "only": "NotoSansSiddham-Regular.ttf",
