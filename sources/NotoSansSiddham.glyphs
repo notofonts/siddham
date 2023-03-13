@@ -1,7 +1,7 @@
 {
-.appVersion = "3109";
+.appVersion = "3134";
 DisplayStrings = (
-"/ra-sidd.ini/ra-sidd.ini.high/ra-sidd"
+"/ra-sidd.ini/ra-sidd.iniThird/ra-sidd.ini.high/ra-sidd"
 );
 classes = (
 {
@@ -1000,7 +1000,7 @@ name = ss05;
 notes = "Name: Alternate form of rya";
 },
 {
-code = "ignore sub ra-sidd.ini' y-sidd.ra';\012sub ra-sidd.ini' by ra-sidd.ini.high;";
+code = "ignore sub ra-sidd.ini' y-sidd.ra';\012sub ra-sidd.ini' by ra-sidd.ini.high;\012sub ra-sidd.iniThird' by ra-sidd.ini.high;\012";
 name = ss06;
 notes = "Name: Raised reph head";
 }
@@ -58629,8 +58629,8 @@ subCategory = Composition;
 },
 {
 glyphname = "ra-sidd.ini.high";
-production = uni115A8.ini.001;
-lastChange = "2022-09-12 11:13:38 +0000";
+production = uni115A8.ini.high;
+lastChange = "2023-03-13 14:09:52 +0000";
 layers = (
 {
 anchors = (
