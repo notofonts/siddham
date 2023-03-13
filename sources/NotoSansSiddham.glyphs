@@ -1,7 +1,8 @@
 {
 .appVersion = "3134";
 DisplayStrings = (
-"/ra-sidd.ini/ra-sidd.iniThird/ra-sidd.ini.high/ra-sidd"
+"/ra-sidd.ini/ra-sidd.iniThird/ra-sidd.ini.high/ra-sidd",
+"/ra-sidd/ra-sidd.ini/ra-sidd.ini.high"
 );
 classes = (
 {
@@ -355,6 +356,10 @@ name = CK_L_aaMatra;
 {
 code = "sha-sidd sha-sidd.ini sha-sidd.iniThird sh-sidd.med.ra sh-sidd.ra";
 name = CK_R_sha;
+},
+{
+code = "aaMatra-sidd.ra iMatra-sidd.ra iiMatra-sidd.ra eMatra-sidd.ra aiMatra-sidd.ra aiMatra-sidd.ra.ss02 uMatra-sidd.ra uuMatra-sidd.ra \012iMatra-sidd.narrow.ra\012iiMatra-sidd.narrow.ra\012";
+name = ra_matras;
 }
 );
 copyright = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/siddham)";
@@ -1000,7 +1005,7 @@ name = ss05;
 notes = "Name: Alternate form of rya";
 },
 {
-code = "ignore sub ra-sidd.ini' y-sidd.ra';\012sub ra-sidd.ini' by ra-sidd.ini.high;\012sub ra-sidd.iniThird' by ra-sidd.ini.high;\012";
+code = "ignore sub ra-sidd.ini' y-sidd.ra';\012sub ra-sidd.ini' by ra-sidd.ini.high;\012sub ra-sidd.iniThird' by ra-sidd.ini.high;\012\012lookup RaiseRaMatra {\012	lookupflag UseMarkFilteringSet @ra_matras;\012	pos @ra_matras' <0 176 0 0> ra-sidd.ini.high;\012	pos ra-sidd.ini.high @ra_matras' <0 176 0 0>;\012} RaiseRaMatra;\012\012";
 name = ss06;
 notes = "Name: Raised reph head";
 }
@@ -12873,7 +12878,7 @@ subCategory = Other;
 {
 glyphname = "ra-sidd.ini";
 production = uni115A8.ini;
-lastChange = "2022-06-16 10:50:06 +0000";
+lastChange = "2023-03-13 14:14:59 +0000";
 layers = (
 {
 anchors = (
