@@ -5,8 +5,8 @@ Fontbakery version: 0.8.11
 <details><summary><b>[8] NotoSansSiddham-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Version number has increased since previous release on Google Fonts? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/version_bump">com.google.fonts/check/version_bump</a>)</summary><div>
 
 
-* 🔥 **FAIL** Version number 2.0030059814453125 is less than version on Google Fonts (2.003997802734375).
-* 🔥 **FAIL** Version number 2.0030059814453125 is less than version on Google Fonts GitHub repo (2.003997802734375).
+* 🔥 **FAIL** Version number 2.003997802734375 is equal to version on Google Fonts.
+* 🔥 **FAIL** Version number 2.003997802734375 is equal to version on Google Fonts GitHub repo.
 </div></details><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
