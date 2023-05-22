@@ -1006,9 +1006,9 @@ name = ss03;
 notes = "Name: Large AI and AU matra (warabi ten)";
 },
 {
-code = "sub y-sidd.ra by y-sidd.ra.ss05;\012\012# I think this is also true\012sub [uMatra-sidd.stem uuMatra-sidd.stem uMatra-sidd.ra uuMatra-sidd.ra uMatraAlt-sidd] by [uMatra-sidd uuMatra-sidd uMatra-sidd uuMatra-sidd uMatra-sidd];";
+code = "sub y-sidd.ra by y-sidd.ra.ss05;\012sub ja-sidd.ini ny-sidd by seed_ja_nn-sidd;\012\012# I think this is also true\012sub [uMatra-sidd.stem uuMatra-sidd.stem uMatra-sidd.ra uuMatra-sidd.ra uMatraAlt-sidd] by [uMatra-sidd uuMatra-sidd uMatra-sidd uuMatra-sidd uMatra-sidd];\012";
 name = ss05;
-notes = "Name: Alternate form of rya";
+notes = "Name: Alternate form of rya and jna";
 },
 {
 code = "ignore sub ra-sidd.ini' y-sidd.ra';\012sub ra-sidd.ini' by ra-sidd.ini.high;\012sub ra-sidd.iniThird' by ra-sidd.ini.high;\012\012lookup RaiseRaMatra {\012	lookupflag UseMarkFilteringSet @ra_matras;\012	pos @ra_matras' <0 176 0 0> ra-sidd.ini.high;\012	pos ra-sidd.ini.high @ra_matras' <0 176 0 0>;\012} RaiseRaMatra;\012\012";
