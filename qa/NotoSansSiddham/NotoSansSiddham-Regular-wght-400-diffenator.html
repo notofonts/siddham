@@ -107,11 +107,11 @@
             .header {
             font-weight: bold;
             }
-            .attrib-old{
+            .attr-before{
                 color: red;
                 cursor: text;
             }
-            .attrib-new{
+            .attr-after{
                 color: green;
                 cursor: text;
             }
@@ -142,7 +142,7 @@
 
 	  
 	    @font-face{
-    src: url(old-NotoSansSiddham-Regular.ttf);
+    src: url("old-NotoSansSiddham-Regular.ttf");
     font-family: "old font";
     font-weight: 400;
     
@@ -152,7 +152,7 @@
 
 	  
 	    @font-face{
-    src: url(new-NotoSansSiddham-Regular.ttf);
+    src: url("new-NotoSansSiddham-Regular.ttf");
     font-family: "new font";
     font-weight: 400;
     
@@ -213,6 +213,14 @@
   clear: both;
 }
 
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
     </style>
 </head>
 <body>
@@ -220,6 +228,9 @@
 		
 			<div class="nav-item" id="font-toggle">old</div>
 		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
 		
 	</div>
     <div id="content">
@@ -230,7 +241,7 @@
   
     <div class="box">
     <div class="box-title">Tables</div>
-     <script>var fontdiff = {"GPOS": {"table": {"FeatureList": {"FeatureCount": [5, 6], "FeatureRecord": {"2": {"Feature": {"LookupListIndex": {"0": [185, 7], "1": [186, 42], "2": [null, 60], "3": [null, 84], "4": [null, 126], "5": [null, 143], "6": [null, 159], "7": [null, 161], "8": [null, 164], "9": [null, 166], "10": [null, 168], "11": [null, 170], "12": [null, 172], "13": [null, 174], "14": [null, 176], "15": [null, 178], "16": [null, 180], "17": [null, 182], "18": [null, 184]}, "LookupCount": [2, 19]}}, "3": {"FeatureTag": ["kern", "dist"], "Feature": {"LookupListIndex": {"1": [40, 6], "2": [58, 7], "3": [82, 42], "4": [124, 60], "5": [141, 84], "6": [157, 126], "7": [159, 143], "8": [162, 159], "9": [164, 161], "10": [166, 164], "11": [168, 166], "12": [170, 168], "13": [172, 170], "14": [174, 172], "15": [176, 174], "16": [178, 176], "17": [180, 178], "18": [182, 180], "19": [null, 182], "20": [null, 184]}, "LookupCount": [19, 21]}}, "5": {"FeatureTag": [null, "ss06"], "Feature": {"FeatureParams": {"Version": [null, 0], "UINameID": [null, 261]}, "LookupCount": [null, 1], "LookupListIndex": {"0": [null, 187]}}}}}, "ScriptList": {"ScriptRecord": {"0": {"Script": {"DefaultLangSys": {"FeatureCount": [4, 5], "FeatureIndex": {"2": [3, 2], "4": [null, 5]}}}}, "1": {"Script": {"DefaultLangSys": {"FeatureIndex": {"2": [2, 3], "3": [3, 4], "4": [4, 5]}}}}}}, "LookupList": {"LookupCount": [187, 189], "Lookup": {"error": ["There are 187 changes, check manually!", ""]}}}}, "OS/2": {"usMaxContext": [9, 8]}, "name": {"260/3/1/1033": ["Alternate form of rya", "Alternate form of rya and jna"], "3/3/1/1033": ["2.004;GOOG;NotoSansSiddham-Regular", "2.005;GOOG;NotoSansSiddham-Regular"], "5/3/1/1033": ["Version 2.004", "Version 2.005"]}, "post": {"extraNames": {"503": ["uni115A8.ini.001", "uni115A8.ini.high"]}}, "GSUB": {"table": {"FeatureList": {"FeatureRecord": {"3": {"Feature": {"LookupListIndex": {"0": [51, 50], "1": [53, 52], "2": [59, 54], "3": [65, 56], "4": [66, 57], "5": [68, 59], "6": [75, 61], "7": [82, 63], "8": [84, 65], "9": [85, 66], "10": [89, 70], "11": [92, 72], "12": [96, 76], "13": [103, 78], "14": [120, 81], "15": [131, 84], "16": [142, 87], "17": [153, 90], "18": [158, 93], "19": [160, 95], "20": [163, 98], "21": [167, 101], "22": [170, 104]}}}, "4": {"Feature": {"LookupListIndex": {"0": [175, 109], "1": [177, 111], "2": [179, 113], "3": [181, 115], "4": [183, 117], "5": [186, 120], "6": [188, 122], "7": [190, 124], "8": [192, 126], "9": [196, 128], "10": [200, 132]}}}, "5": {"Feature": {"LookupListIndex": {"0": [173, 107]}}}, "6": {"Feature": {"LookupListIndex": {"0": [174, 108]}}}, "7": {"Feature": {"LookupListIndex": {"0": [201, 133]}}}, "9": {"Feature": {"LookupListIndex": {"0": [202, 134], "1": [null, 135], "2": [null, 136]}, "LookupCount": [1, 3]}}, "10": {"Feature": {"LookupListIndex": {"0": [203, 137]}}}}}, "LookupList": {"LookupCount": [205, 139], "Lookup": {"error": ["There are 157 changes, check manually!", ""]}}}}, "GDEF": {"table": {"MarkGlyphSetsDef": {"Coverage": {"2": {"glyphs": {"0": [null, "uni115B0.narrow.ra"], "1": [null, "uni115B1.narrow.ra"], "2": [null, "uni115AF.ra"], "3": [null, "uni115B0.ra"], "4": [null, "uni115B1.ra"], "5": [null, "uni115B8.ra"], "6": [null, "uni115B9.ra"], "7": [null, "uni115B9.ra.ss02"], "8": [null, "uni115B2.ra"], "9": [null, "uni115B3.ra"]}}}, "MarkSetCount": [2, 3]}, "GlyphClassDef": {"classDefs": {"uni115A8.ini.high": [null, 1], "uni115A8.ini.001": [1, null]}}}}, "hmtx": {"metrics": {"uni115A8.ini.high": {"0": [null, 522], "1": [null, 41]}, "uni115A8.ini.001": {"0": [522, null], "1": [41, null]}}}, "glyf": {"glyphOrder": {"505": ["uni115A8.ini.001", "uni115A8.ini.high"]}, "glyphs": {"error": ["There are 501 changes, check manually!", ""]}}, "head": {"modified": [3747824373, 3770172204], "checkSumAdjustment": [916200938, 3002879033], "fontRevision": [2.003997802734375, 2.0050048828125]}};</script><div id="difftable"></div>
+      <div data-path="root" data-open="0" id="difftable"></div>
     </div>
     
     
@@ -254,6 +265,7 @@
 
     </div>
   
+<script>var fontdiff = {"hhea": {"caretSlopeRise": [1, 1000]}, "name": {"13/3/1/1033": ["This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL", "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://openfontlicense.org"], "14/3/1/1033": ["https://scripts.sil.org/OFL", "https://openfontlicense.org"]}, "head": {"modified": [3770172244, 3803402718], "checkSumAdjustment": [3002878953, 3445506047]}};</script>
 
     </div>
 </body>
@@ -290,38 +302,157 @@
 		fontToggle.addEventListener("click", switchFonts);
 	}
 
-	function render(node, toplevel) {
-		var wrapper = $("<div> </div>");
-		if (!node) { return wrapper }
-		if (Array.isArray(node)) {
-			var before = $("<span/>");
-			before.addClass("attr-before");
-			before.html(" " + node[0] + " ");
-			var after = $("<span/>");
-			after.addClass("attr-after");
-			after.append(node[1]);
-			wrapper.append(before);
-			wrapper.append(after);
-			return wrapper
-		}
-		for (const [key, value] of Object.entries(node)) {
-			var display = $("<div/>");
-			display.addClass("node")
-			if (!toplevel && ! key.match(/^\d+$/)) {
-				display.hide()
-			}
-			display.append(key);
-			display.append(render(value, false).children());
-			wrapper.append(display)
-		}
-		return wrapper
+// apply optional ot feats
 
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
 	}
-	$(function() {
-		$("#difftable").append(render(fontdiff, true).children())
-		$(".node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
-	});
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
     
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
 
 function wordBreaks() {
   words = document.getElementsByClassName("cell-word")
